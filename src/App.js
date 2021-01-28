@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 
@@ -9,7 +9,7 @@ function App() {
 
   const getJoke = () => {
     Axios.get("https://official-joke-api.appspot.com/random_joke").then((response) => {
-      console.log(response);
+      //console.log(response);
       setJoke(response.data.setup + " ... " + response.data.punchline);
     });
     
