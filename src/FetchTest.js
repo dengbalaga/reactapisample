@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
-import Axios from 'axios';
-import logo from './logo.svg';
-import './App.css';
 
 
-function App() {
+
+function Fetchy() {
   const [joke, setJoke] = useState("");
 
   const getJoke = () => {
@@ -25,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Fetchy;
